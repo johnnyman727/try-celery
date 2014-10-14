@@ -1,0 +1,18 @@
+{
+  "name": "try-celery",
+  "version": "0.0.1",
+  "description": "Trycelery.com API Library",
+  "author": {
+    "name": "Jon McKay"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "request": "~2.12.0",
+    "dotty": "0.0.1",
+    "underscore" : "^1.7.0"
+  },
+  "readme": "# Celery Node.js API Libary\n\nThis is a very small API library for [Trycelery](https://trycelery.com/), you can find the documentation [here](https://www.trycelery.com/developer).\n\n## Installation\n\n"
+}
