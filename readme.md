@@ -1,6 +1,6 @@
 # Celery Node.js API Libary
 
-This is a very small API library for [Celery](www.trycelery.com), you can find the documentation [here](https://www.trycelery.com/developer).
+This is a very small API library for [Celery](www.trycelery.com), you can find the documentation [here](https://www.trycelery.com/developer). It's heavily inspired by [@reggi](https://github.com/reggi)'s [Whiplash](https://github.com/reggi/whiplash) client.
 
 ## Installation
 
