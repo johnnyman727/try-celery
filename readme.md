@@ -12,7 +12,7 @@ This is a very small API library for [Celery](www.trycelery.com), you can find t
 
 ## Usage
     
-    var Celery = new require("try-celery");
+    var Celery = require("try-celery");
     var celery = new Celery("YOUR_API_KEY_HERE");
 
 ---
