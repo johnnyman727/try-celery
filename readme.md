@@ -24,27 +24,27 @@ The `new Celery()` object can take a couple of different argument sets.
 ### String
 
 A key in the form of a `string`, like so, `version` is automatically `1`.
-	
-	var celery = new Celery("j54kjh83ij2h23");
+  
+  var celery = new Celery("j54kjh83ij2h23");
 
 ### Object
-	
+  
 A key in the form of a `object, like so.
 
-	var celery = new Celery({
-		"key": "j54kjh83ij2h23",
-		"version": "1",
-	});
+  var celery = new Celery({
+    "key": "j54kjh83ij2h23",
+    "version": "1",
+  });
 
----	
+--- 
 
 ## Request
 
 The last function you'll ever need `celery.request()`. This function is very similar to the object above in terms of parameters.
 
-	
-	celery.request(options,callbacks);
-	
+  
+  celery.request(options,callbacks);
+  
 The function takes two parameters.
 
 ### Option Parameter
@@ -56,15 +56,15 @@ If options is a string it will be the same as `options.url` see below.
 #### Object
 
 There is only one mandatory value if you use options as an object and that is `options.url`. No preceding `/` is needed when specifying a path (e.g. `orders`, `orders/originator`)
-	
+  
 You can specify `options.method` and `query`.
 
 The defaults are as follows:
 
-	var options = {
-		"method":"GET",
-		"query":{},
-	}
+  var options = {
+    "method":"GET",
+    "query":{},
+  }
 
 ### Callbacks Parameter
 
@@ -72,13 +72,13 @@ The `callbacks` param is a object, which needs to contain both `success` and `er
 
 ### Example
 
-        celery.request({
-            "method":"DELETE",
-            "url":"orders/"+id
-        }, function(err, body){
-			if(err) console.log(err);
-			console.log(body);
-		});
+  celery.request({
+    "method":"DELETE",
+    "url":"orders/"+id
+  }, function(err, body){
+    if(err) console.log(err);
+    console.log(body);
+  });
 
 ---
 
@@ -87,9 +87,9 @@ The `callbacks` param is a object, which needs to contain both `success` and `er
 The following example returns all `orders`.
 
 
-	var Celery = new require("try-celert");
-	var celery = new Celery("j54kjh83ij2h23");
-	celery.request("orders", function(err, body){
-		if(err) console.log(err);
-		console.log(body);
-	});
+  var Celery = require("try-celery");
+  var celery = new Celery("j54kjh83ij2h23");
+  celery.request("orders", function(err, body){
+    if(err) console.log(err);
+    console.log(body);
+  });
