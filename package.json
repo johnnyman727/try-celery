@@ -1,6 +1,6 @@
 {
   "name": "try-celery",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Trycelery.com API Library",
   "author": {
     "name": "Jon McKay"
