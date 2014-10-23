@@ -35,7 +35,7 @@ var Celery = function(config){
 
     if(dotty.exists(options,"url")){
       options.url = (options.url.match(/^\//)) ? options.url.substring(1,options.url.length) : options.url;
-      options.url = celery.config.baseurl + "/v" + celery.config.version + "/"  + options.url + "?access_token=" + celery.config.key;
+      options.url = celery.config.baseurl + "/v" + celery.config.version + "/"  + options.url;
     }
 
     return _.defaults(options,{
@@ -43,7 +43,8 @@ var Celery = function(config){
       "method": "GET",
       "json" : true,
       "headers":{
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          "Authentication" : celery.config.key
       },
     });
   };
