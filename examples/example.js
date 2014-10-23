@@ -14,7 +14,7 @@ var celery = new Celery({key:"helloworld"});
       version: 1 }
 */
 
-var celery = new Celery("YOUR_API_KEY");
+var celery = new Celery("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1MjRiYTI1NzZmOWRlYTAyMDAwMDAwMGYifQ.oqNHnbpGqzHL9irWCxtELbPKicbGjGDWcIcXMxPuSo0");
 
 celery.request("orders",function(err,body){
     console.log(err);

@@ -18,7 +18,7 @@ var Celery = function(config){
     
     return _.defaults(config,{
       "baseurl": 'https://api.trycelery.com',
-      "version": 1,
+      "version": 2,
     });
   })(config);
 
@@ -44,7 +44,7 @@ var Celery = function(config){
       "json" : true,
       "headers":{
           "Content-Type": "application/json",
-          "Authentication" : celery.config.key
+          "Authorization" : celery.config.key
       },
     });
   };
